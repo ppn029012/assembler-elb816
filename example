@@ -1,0 +1,14 @@
+pang EQU 23h
+hws  EQU 32h
+
+MOV A, R1
+MOV A, R2
+ORG 0010h 
+loop1: MOV A, R1
+loop2: MOV A, #32h
+ORG 0020h
+DB pang,hws,loop1
+
+cloop: MOV A, R1
+
+end
